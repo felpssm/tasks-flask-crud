@@ -1,0 +1,13 @@
+name: testando pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test-pipe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Exibindo mensagens nos logs
+        run: echo "Github Actions Funcionando!"
